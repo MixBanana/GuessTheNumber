@@ -14,6 +14,8 @@ while running:
     if (counter==6): # Client side counter check
         print(F"Client guess counter: {counter}") # DEBUG COUNTER
         quit()
+    if("Good job!" in reply):
+        quit()
     data = input("Please enter your guess: ")
     if(data == 'q'):
         # Client side Close input
