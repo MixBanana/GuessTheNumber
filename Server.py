@@ -40,7 +40,6 @@ while(running):
             #print(F"HIGH: Data: {data} Rand: {rand}")
             client.send("Your guess is too high.\n".encode())
         else:
-            client.send("BASTARD".encode())
             running=0
     except:
         # GOTCHA BASTARD - Prevent unexpected data
