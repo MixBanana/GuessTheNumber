@@ -19,7 +19,7 @@ while(running):
         data = client.recv(2048).decode()
         data = int(data)
         counter += 1
-        if(counter>=5):
+        if(counter>=6):
             client.send("No more chances!".encode())
             running = 0
         #client.send(data.encode())
