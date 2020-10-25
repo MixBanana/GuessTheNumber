@@ -29,7 +29,7 @@ while(running):
         if(data=='q'): # Server side close connection check
             s.close()
         elif(rand == data):
-            client.send(F"Good job! You guessed my number in {rand} guesses!".encode())
+            client.send(F"Good job! You guessed my number in {counter} guesses!".encode())
             running = 0
         elif(data < rand):
             # DEBUG LOW
