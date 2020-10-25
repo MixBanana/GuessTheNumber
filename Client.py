@@ -12,7 +12,7 @@ while running:
     print(reply)
     counter += 1
     if (counter==6): # Client side counter check
-        print(F"Client guess counter: {counter}") # DEBUG COUNTER
+        #print(F"Client guess counter: {counter}") # DEBUG COUNTER
         quit()
     if("Good job!" in reply):
         quit()
